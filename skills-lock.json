@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "skills": {
+    "video-to-game": {
+      "source": "lovisdotio/video-to-game",
+      "commit": "d1a24fd8a47576ec4b3c36388b30deda0631def9",
+      "sourceType": "github",
+      "skillPath": "skills/video-to-game/SKILL.md",
+      "computedHash": "b4366cd508d131ebde1a4965bceb83c6a45a9019af64def624ab8ae48622c0ca"
+    }
+  }
+}

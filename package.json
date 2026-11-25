@@ -1,0 +1,24 @@
+{
+  "name": "heavendefense",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgyoung96/HeavenDefense.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sgyoung96/HeavenDefense/issues"
+  },
+  "homepage": "https://github.com/sgyoung96/HeavenDefense#readme",
+  "devDependencies": {
+    "playwright-core": "^1.65.1"
+  }
+}
