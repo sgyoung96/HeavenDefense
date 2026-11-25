@@ -1,0 +1,32 @@
+:root { color-scheme: dark; font: 16px system-ui, sans-serif; color: #fff9ef; background: #171e35; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+[hidden] { display: none !important; }
+#game { position: relative; isolation: isolate; overflow: hidden; margin: auto; width: min(100vw, 64dvh); height: 100dvh; background: #a5b5e5; }
+canvas { position: absolute; inset: 0; z-index: -1; display: block; touch-action: none; }
+#hud { position: absolute; inset: max(12px, env(safe-area-inset-top)) 12px auto; }
+.wave, .meters { background: #171e35e8; border: 1px solid #fbecbc66; border-radius: 12px; padding: 8px 12px; box-shadow: 0 6px 18px #171e3533; }
+.wave { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.meters { display: grid; gap: 2px; margin-top: 5px; font-size: 12px; }
+label { display: grid; grid-template-columns: 38px 1fr 33px; align-items: center; }
+label span:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+meter { width: 100%; height: 13px; }
+meter::-webkit-meter-optimum-value { background: #ffd986; }
+#hp::-webkit-meter-optimum-value { background: #f388a0; }
+#mp::-webkit-meter-optimum-value { background: #8dcaff; }
+#xp::-webkit-meter-optimum-value { background: #9ff2b0; }
+#controls { position: absolute; inset: auto 12px max(15px, env(safe-area-inset-bottom)); display: flex; align-items: end; justify-content: space-between; gap: 10px; pointer-events: none; }
+#stick { pointer-events: auto; touch-action: none; display: grid; place-items: center; width: 86px; height: 86px; flex: 0 0 86px; border: 2px solid #fff8df99; border-radius: 50%; background: #2229457a; }
+#stick i { width: 34px; height: 34px; border-radius: inherit; background: #fff2cecc; }
+#skills { display: flex; gap: 4px; pointer-events: auto; }
+button { font: inherit; color: inherit; cursor: pointer; background: #2b3659; border: 1px solid #ffebbd88; border-radius: 9px; padding: 7px 10px; }
+button:focus-visible { outline: 2px solid #fff2ac; outline-offset: 2px; }
+button:disabled { opacity: .6; cursor: default; }
+#skills button { width: clamp(42px, 13vw, 70px); padding: 5px 2px; min-height: 48px; font-size: 11px; }
+#skills b { display: block; color: #ffe6a4; font-size: 15px; }
+#overlay { position: absolute; inset: 0; display: grid; place-items: center; background: #131d3880; padding: 16px; }
+.panel { width: min(100%, 350px); text-align: center; border: 1px solid #ffebbd88; border-radius: 18px; background: #1c2846f5; padding: 22px 16px; box-shadow: 0 16px 48px #10182e80; }
+h1 { color: #ffe6af; margin: 5px 0 10px; font-family: Georgia, serif; font-size: clamp(26px, 7vw, 42px); }
+#subtitle { margin: 0; color: #bcbff2; font-size: 13px; }
+#message { font-size: 14px; line-height: 1.6; }
+#actions { display: grid; gap: 7px; }

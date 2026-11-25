@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./src/game.css">
+  <script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js"}}</script>
+  <title>Heaven Defense</title>
+</head>
+<body>
+  <main id="game" aria-label="Heaven Defense">
+    <header id="hud" hidden>
+      <div class="wave"><b id="wave"></b><span id="clock"></span><button id="pause" aria-label="일시정지">Ⅱ</button></div>
+      <div class="meters">
+        <label>성 <meter id="castle" min="0" max="1000" value="1000"></meter><span id="castle-value"></span></label>
+        <label>체력 <meter id="hp" min="0" max="100" value="100"></meter><span id="hp-value"></span></label>
+        <label>마력 <meter id="mp" min="0" max="100" value="100"></meter><span id="mp-value"></span></label>
+        <label><span id="level"></span><meter id="xp" min="0" max="20" value="0"></meter></label>
+      </div>
+    </header>
+    <div id="controls" hidden>
+      <div id="stick" aria-label="이동 조이스틱"><i></i></div>
+      <div id="skills"></div>
+    </div>
+    <section id="overlay" aria-live="polite">
+      <div class="panel">
+        <p id="subtitle">천상의 정원</p>
+        <h1 id="title">Heaven Defense</h1>
+        <p id="message">성을 지키고, 슬라임이 떨어뜨린 결정을 모으세요.</p>
+        <div id="actions"><button disabled>불러오는 중</button></div>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="./src/main.mjs"></script>
+</body>
+</html>
