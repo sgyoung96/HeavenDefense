@@ -1,0 +1,17 @@
+Create a continuous gameplay recording of a cute 3D isometric pixel-art survival and castle defense game based on the uploaded reference image.
+
+Preserve the original pastel pink and sky-blue clouds, medieval castle, grassy terrain, flowers, river, female pixel-art player character, and cute unicorn companion.
+
+The player moves around the castle while the unicorn follows her. Groups of colorful slime monsters spawn from the edges of the map and move toward the castle.
+
+The player attacks nearby slimes with magical projectiles. The unicorn assists with small magical attacks. Defeated slimes disappear and drop glowing experience crystals.
+
+Maintain the original pixel-art aesthetic, character proportions, terrain layout, lighting, and pastel color palette.
+
+Fixed isometric gameplay camera. Smooth and readable sprite animations. A single continuous gameplay shot.
+
+Keep the existing HUD, HP and MP bars, virtual joystick, and attack button stable throughout the video.
+
+No camera rotation, no zoom, no scene transitions, no cinematic shots, no character morphing.
+
+The result must look like an actual playable video game screen recording.
